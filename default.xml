@@ -10,9 +10,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
- <remote  name="XperiaPAC"
-           fetch="https://github.com/XperiaPAC"
-            />
+ 
   <!-- Generic github remote -->
   <remote  name="github"
            fetch="https://github.com" />
@@ -27,6 +25,9 @@
   <remote  name="pa"
            fetch="https://github.com/ParanoidAndroid"
            review="gerrit.androidninjas.com:8181" />
+           <remote  name="XperiaPAC"
+           fetch="https://github.com/XperiaPAC"
+            />
 
   <!-- Other remotes -->
   <remote  name="cfx"
