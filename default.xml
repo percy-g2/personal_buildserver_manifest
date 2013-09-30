@@ -325,7 +325,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" remote="aosp" revision="66702f7263eb7e30a4596135bb18443997bc24cf"  />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-10.1" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
   <project path="vendor/pa" name="percy-g2/android_vendor_pa" remote="github" revision="jellybean-legacy" />
