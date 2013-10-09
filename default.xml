@@ -144,7 +144,7 @@
   <project path="external/libogg" name="CyanogenMod/android_external_libogg" remote="cm" revision="cm-10.2"  />
   <project path="external/libpcap" name="CyanogenMod/android_external_libpcap" remote="cm" revision="cm-10.2"  />
   <project path="external/libphonenumber" name="CyanogenMod/android_external_libphonenumber" remote="cm" revision="cm-10.2"  /> remote="cm" revision="cm-10.2" 
-  <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" />
+  <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" remote="cm" revision="cm-10.2" />
   <project path="external/libpng" name="CyanogenMod/android_external_libpng" groups="pdk"  remote="cm" revision="cm-10.2" />
   <project path="external/libppp" name="CyanogenMod/android_external_libppp"  remote="cm" revision="cm-10.2" />
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk"  remote="cm" revision="cm-10.2" />
@@ -179,7 +179,7 @@
   <project path="external/nist-sip" name="CyanogenMod/android_external_nist-sip" remote="cm" revision="cm-10.2"  />
   <project path="external/noto-fonts" name="platform/external/noto-fonts" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="cm" revision="cm-10.2"  />
-  <project path="external/oauth" name="CyanogenMod/android_external_oauth" />
+  <project path="external/oauth" name="CyanogenMod/android_external_oauth" remote="cm" revision="cm-10.2" />
   <project path="external/objenesis" name="platform/external/objenesis" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="external/okhttp" name="CyanogenMod/android_external_okhttp" remote="cm" revision="cm-10.2"  />
   <project path="external/open-vcdiff" name="platform/external/open-vcdiff" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
