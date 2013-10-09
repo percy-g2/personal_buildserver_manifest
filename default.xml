@@ -24,7 +24,7 @@
            sync-f="true"
            sync-j="4" />
 
-  <project path="build" name="percy-g2/android_build" remote="github" revision="master" >
+  <project path="build" name="percy-g2/android_build-1" remote="github" revision="jb43-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -32,15 +32,14 @@
   
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" remote="cm" revision="cm-10.2" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
+  <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" remote="cm" revision="cm-10.2" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="cts" name="platform/cts" groups="cts" />
+  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="cts" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" remote="cm" revision="cm-10.2" />
-  <project path="developers/build" name="platform/developers/build" />
-  <project path="developers/demos" name="platform/developers/demos" />
-  <project path="developers/docs" name="platform/developers/docs" />
-  <project path="developers/samples/android" name="platform/developers/samples/android" />
+  <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="CyanogenMod/android_device_common" remote="cm" revision="cm-10.2" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -51,174 +50,195 @@
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="external/aac" name="platform/external/aac" groups="pdk" />
-  <project path="external/android-clat" name="platform/external/android-clat" />
-  <project path="external/android-mock" name="platform/external/android-mock" />
-  <project path="external/ant-glob" name="platform/external/ant-glob" />
-  <project path="external/antlr" name="platform/external/antlr" />
-  <project path="external/apache-harmony" name="platform/external/apache-harmony" />
-  <project path="external/apache-http" name="platform/external/apache-http" />
-  <project path="external/apache-qp" name="platform/external/apache-qp" />
-  <project path="external/apache-xml" name="platform/external/apache-xml" />
-  <project path="external/arduino" name="platform/external/arduino" />
-  <project path="external/bison" name="platform/external/bison" groups="pdk" />
-  <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="external/bouncycastle" name="platform/external/bouncycastle" />
-  <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" revision="cm-10.2"/>
-  <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
-  <project path="external/ceres-solver" name="platform/external/ceres-solver" />
-  <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
-  <project path="external/chromium" name="platform/external/chromium" />
-  <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/clang" name="platform/external/clang" groups="pdk" />
-  <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
-  <project path="external/dexmaker" name="platform/external/dexmaker" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" />
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
-  <project path="external/doclava" name="ParanoidAndroid/android_external_doclava" remote="github" revision="jb43" />
-  <project path="external/dropbear" name="platform/external/dropbear" />
-  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="external/easymock" name="platform/external/easymock" />
-  <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" />
-  <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" />
-  <project path="external/eigen" name="platform/external/eigen" />
-  <project path="external/elfutils" name="platform/external/elfutils" />
-  <project path="external/embunit" name="platform/external/embunit" />
-  <project path="external/emma" name="platform/external/emma" />
-  <project path="external/esd" name="platform/external/esd" />
-  <project path="external/expat" name="platform/external/expat" groups="pdk" />
-  <project path="external/eyes-free" name="platform/external/eyes-free" />
-  <project path="external/fdlibm" name="platform/external/fdlibm" />
-  <project path="external/flac" name="platform/external/flac" groups="pdk" />
-  <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
-  <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" remote="cm" revision="cm-10.2" />
-  <project path="external/ganymed-ssh2" name="platform/external/ganymed-ssh2" />
-  <project path="external/gcc-demangle" name="platform/external/gcc-demangle" groups="pdk" />
-  <project path="external/genext2fs" name="platform/external/genext2fs" />
-  <project path="external/giflib" name="platform/external/giflib" />
-  <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" />
-  <project path="external/grub" name="platform/external/grub" />
-  <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
-  <project path="external/guava" name="platform/external/guava" />
-  <project path="external/hamcrest" name="platform/external/hamcrest" />
-  <project path="external/harfbuzz" name="platform/external/harfbuzz" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" />
-  <project path="external/hyphenation" name="platform/external/hyphenation" />
-  <project path="external/icu4c" name="platform/external/icu4c" groups="pdk" />
-  <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
-  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
-  <project path="external/iptables" name="platform/external/iptables" />
-  <project path="external/jack" name="platform/external/jack" />
-  <project path="external/javasqlite" name="platform/external/javasqlite" />
-  <project path="external/javassist" name="platform/external/javassist" />
-  <project path="external/jdiff" name="platform/external/jdiff" />
-  <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
-  <project path="external/jmdns" name="platform/external/jmdns" />
-  <project path="external/jmonkeyengine" name="platform/external/jmonkeyengine" />
-  <project path="external/jpeg" name="platform/external/jpeg" />
-  <project path="external/jsilver" name="platform/external/jsilver" />
-  <project path="external/jsr305" name="platform/external/jsr305" />
-  <project path="external/junit" name="platform/external/junit" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
-  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" remote="cm" revision="cm-10.2" />
-  <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="cm" revision="cm-10.2" />
-  <project path="external/libcap-ng" name="platform/external/libcap-ng" />
-  <project path="external/libffi" name="platform/external/libffi" />
-  <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
-  <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
-  <project path="external/libmtp" name="platform/external/libmtp" />
-  <project path="external/libnfc-nci" name="CyanogenMod/android_external_libnfc-nci" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="external/libnfc-nxp" name="CyanogenMod/android_external_libnfc-nxp" remote="cm" revision="cm-10.2" groups="nxp_nfc" />
-  <project path="external/libnl-headers" name="platform/external/libnl-headers" groups="pdk" />
-  <project path="external/libogg" name="platform/external/libogg" />
-  <project path="external/libpcap" name="platform/external/libpcap" />
-  <project path="external/libphonenumber" name="platform/external/libphonenumber" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
-  <project path="external/libppp" name="platform/external/libppp" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
-  <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
-  <project path="external/libusb" name="platform/external/libusb" />
-  <project path="external/libusb_aah" name="platform/external/libusb_aah" groups="libusb_aah" />
-  <project path="external/libusb-compat" name="platform/external/libusb-compat" />
-  <project path="external/libvorbis" name="platform/external/libvorbis" />
-  <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
-  <project path="external/libxml2" name="platform/external/libxml2" />
-  <project path="external/libxslt" name="platform/external/libxslt" />
-  <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv" />
-  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
-  <project path="external/littlemock" name="platform/external/littlemock" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
-  <project path="external/marisa-trie" name="platform/external/marisa-trie" />
-  <project path="external/markdown" name="platform/external/markdown" />
-  <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
-  <project path="external/mockito" name="platform/external/mockito" />
-  <project path="external/mockwebserver" name="platform/external/mockwebserver" />
-  <project path="external/mp4parser" name="platform/external/mp4parser" />
-  <project path="external/mtpd" name="platform/external/mtpd" />
-  <project path="external/naver-fonts" name="platform/external/naver-fonts" />
-  <project path="external/netcat" name="platform/external/netcat" />
-  <project path="external/netperf" name="platform/external/netperf" />
-  <project path="external/neven" name="platform/external/neven" />
-  <project path="external/nist-pkits" name="platform/external/nist-pkits" />
-  <project path="external/nist-sip" name="platform/external/nist-sip" />
-  <project path="external/noto-fonts" name="platform/external/noto-fonts" />
-  <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="cm" revision="cm-10.2" />
-  <project path="external/oauth" name="platform/external/oauth" />
-  <project path="external/objenesis" name="platform/external/objenesis" />
-  <project path="external/okhttp" name="platform/external/okhttp" />
-  <project path="external/open-vcdiff" name="platform/external/open-vcdiff" />
-  <project path="external/opencv" name="platform/external/opencv" />
-  <project path="external/openfst" name="platform/external/openfst" />
-  <project path="external/openssh" name="platform/external/openssh" />
-  <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
-  <project path="external/oprofile" name="platform/external/oprofile" />
-  <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="cm" revision="cm-10.2" />
-  <project path="external/ping" name="platform/external/ping" />
-  <project path="external/ping6" name="platform/external/ping6" />
-  <project path="external/ppp" name="platform/external/ppp" />
-  <project path="external/proguard" name="platform/external/proguard" groups="pdk-java" />
-  <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
-  <project path="external/qemu" name="platform/external/qemu" />
-  <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" />
-  <project path="external/quake" name="platform/external/quake" />
-  <project path="external/regex-re2" name="platform/external/regex-re2" />
-  <project path="external/replicaisland" name="platform/external/replicaisland" />
-  <project path="external/robolectric" name="platform/external/robolectric" />
-  <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
-  <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <project path="external/skia" name="CyanogenMod/android_external_skia" remote="cm" revision="cm-10.2" />
-  <project path="external/smack" name="platform/external/smack" />
-  <project path="external/smali" name="platform/external/smali" />
-  <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
-  <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
-  <project path="external/srec" name="platform/external/srec" />
-  <project path="external/srtp" name="platform/external/srtp" />
-  <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
-  <project path="external/strace" name="platform/external/strace" />
-  <project path="external/stressapptest" name="platform/external/stressapptest" />
-  <project path="external/svox" name="platform/external/svox" />
-  <project path="external/tagsoup" name="platform/external/tagsoup" />
-  <project path="external/tcpdump" name="platform/external/tcpdump" />
-  <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
-  <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
-  <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
-  <project path="external/v8" name="platform/external/v8" />
-  <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
-  <project path="external/webkit" name="platform/external/webkit" />
-  <project path="external/webp" name="ParanoidAndroid/android_external_webp" remote="github" revision="jb43" />
-  <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
-  <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
-  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="external/zlib" name="CyanogenMod/android_external_zlib" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="external/zxing" name="platform/external/zxing" />
+  <project path="external/aac" name="CyanogenMod/android_external_aac" remote="cm" revision="cm-10.2" />
+  <project path="external/android-clat" name="CyanogenMod/android_external_android-clat" remote="cm" revision="cm-10.2"  />
+  <project path="external/android-mock" name="CyanogenMod/android_external_android-mock" remote="cm" revision="cm-10.2"  />
+  <project path="external/ant-glob" name="CyanogenMod/android_external_ant-glob" remote="cm" revision="cm-10.2"  />
+  <project path="external/antlr" name="CyanogenMod/android_external_antlr" remote="cm" revision="cm-10.2"  />
+  <project path="external/apache-harmony" name="CyanogenMod/android_external_apache-harmony" remote="cm" revision="cm-10.2"  />
+  <project path="external/apache-http" name="CyanogenMod/android_external_apache-http" remote="cm" revision="cm-10.2"  />
+  <project path="external/apache-qp" name="CyanogenMod/android_external_apache-qp" remote="cm" revision="cm-10.2"  />
+  <project path="external/apache-xml" name="CyanogenMod/android_external_apache-xml" remote="cm" revision="cm-10.2"  />
+  <project path="external/arduino" name="CyanogenMod/android_external_arduino" remote="cm" revision="cm-10.2"  />
+  <project path="external/bash" name="CyanogenMod/android_external_bash" remote="cm" revision="cm-10.2"  />
+  <project path="external/bison" name="CyanogenMod/android_external_bison" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/blktrace" name="CyanogenMod/android_external_blktrace" remote="cm" revision="cm-10.2"  />
+  <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" remote="cm" revision="cm-10.2"  />
+  <project path="external/bsdiff" name="CyanogenMod/android_external_bsdiff" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" revision="cm-10.2"  />
+  <project path="external/bzip2" name="CyanogenMod/android_external_bzip2" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/checkpolicy" name="CyanogenMod/android_external_checkpolicy" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/chromium" name="CyanogenMod/android_external_chromium"  remote="cm" revision="cm-10.2" />
+  <project path="external/chromium-trace" name="CyanogenMod/android_external_chromium-trace" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/clang" name="CyanogenMod/android_external_clang" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/compiler-rt" name="CyanogenMod/android_external_compiler-rt" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/dexmaker" name="CyanogenMod/android_external_dexmaker"  remote="cm" revision="cm-10.2" />
+  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd"  remote="cm" revision="cm-10.2" />
+  <project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/doclava" name="CyanogenMod/android_external_doclava"  remote="cm" revision="cm-10.2" />
+  <project path="external/dropbear" name="CyanogenMod/android_external_dropbear"  remote="cm" revision="cm-10.2" />
+  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk"  remote="cm" revision="cm-10.2" / remote="cm" revision="cm-10.2" >
+  <project path="external/easymock" name="CyanogenMod/android_external_easymock"  remote="cm" revision="cm-10.2" />
+  <project path="external/eclipse-basebuilder" name="CyanogenMod/android_external_eclipse-basebuilder"  remote="cm" revision="cm-10.2" />
+  <project path="external/eclipse-windowbuilder" name="CyanogenMod/android_external_eclipse-windowbuilder" remote="cm" revision="cm-10.2"  />
+  <project path="external/elfutils" name="CyanogenMod/android_external_elfutils"  remote="cm" revision="cm-10.2" />
+  <project path="external/embunit" name="CyanogenMod/android_external_embunit" / remote="cm" revision="cm-10.2" >
+  <project path="external/emma" name="CyanogenMod/android_external_emma"  remote="cm" revision="cm-10.2" />
+  <project path="external/esd" name="CyanogenMod/android_external_esd"  remote="cm" revision="cm-10.2" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat"  remote="cm" revision="cm-10.2" />
+  <project path="external/expat" name="CyanogenMod/android_external_expat" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/eyes-free" name="CyanogenMod/android_external_eyes-free"  remote="cm" revision="cm-10.2" />
+  <project path="external/fdlibm" name="CyanogenMod/android_external_fdlibm"  remote="cm" revision="cm-10.2" />
+  <project path="external/flac" name="CyanogenMod/android_external_flac" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/freetype" name="CyanogenMod/android_external_freetype" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos"  remote="cm" revision="cm-10.2" />
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse"  remote="cm" revision="cm-10.2" />
+  <project path="external/ganymed-ssh2" name="CyanogenMod/android_external_ganymed-ssh2"  remote="cm" revision="cm-10.2" />
+  <project path="external/gcc-demangle" name="CyanogenMod/android_external_gcc-demangle" groups="pdk" / remote="cm" revision="cm-10.2" >
+  <project path="external/genext2fs" name="CyanogenMod/android_external_genext2fs" remote="cm" revision="cm-10.2"  />
+  <project path="external/giflib" name="CyanogenMod/android_external_giflib"  remote="cm" revision="cm-10.2" />
+  <project path="external/google" name="CyanogenMod/android_external_google"  remote="cm" revision="cm-10.2" />
+  <project path="external/google-diff-match-patch" name="CyanogenMod/android_external_google-diff-match-patch"  remote="cm" revision="cm-10.2" />
+  <project path="external/grub" name="CyanogenMod/android_external_grub"  remote="cm" revision="cm-10.2" />
+  <project path="external/gson" name="CyanogenMod/android_external_gson"  remote="cm" revision="cm-10.2" />
+  <project path="external/gtest" name="CyanogenMod/android_external_gtest" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/guava" name="CyanogenMod/android_external_guava" remote="cm" revision="cm-10.2"  />
+  <project path="external/hamcrest" name="CyanogenMod/android_external_hamcrest" remote="cm" revision="cm-10.2"  />
+  <project path="external/harfbuzz" name="CyanogenMod/android_external_harfbuzz" remote="cm" revision="cm-10.2"  />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/heimdall" name="CyanogenMod/android_external_heimdall" remote="cm" revision="cm-10.2"  />
+  <project path="external/htop" name="CyanogenMod/android_external_htop" remote="cm" revision="cm-10.2"  />
+  <project path="external/hyphenation" name="CyanogenMod/android_external_hyphenation" remote="cm" revision="cm-10.2"  />
+  <project path="external/icu4c" name="CyanogenMod/android_external_icu4c" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/iproute2" name="CyanogenMod/android_external_iproute2" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/ipsec-tools" name="CyanogenMod/android_external_ipsec-tools" remote="cm" revision="cm-10.2"  />
+  <project path="external/iptables" name="CyanogenMod/android_external_iptables"  remote="cm" revision="cm-10.2" />
+  <project path="external/jack" name="CyanogenMod/android_external_jack" remote="cm" revision="cm-10.2"  /> remote="cm" revision="cm-10.2" 
+  <project path="external/javasqlite" name="CyanogenMod/android_external_javasqlite"  remote="cm" revision="cm-10.2" />
+  <project path="external/javassist" name="CyanogenMod/android_external_javassist" remote="cm" revision="cm-10.2" />
+  <project path="external/jdiff" name="CyanogenMod/android_external_jdiff" remote="cm" revision="cm-10.2"  />
+  <project path="external/jhead" name="CyanogenMod/android_external_jhead" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/jmdns" name="CyanogenMod/android_external_jmdns"  remote="cm" revision="cm-10.2" />
+  <project path="external/jmonkeyengine" name="CyanogenMod/android_external_jmonkeyengine"  remote="cm" revision="cm-10.2" />
+  <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/jsilver" name="CyanogenMod/android_external_jsilver"  remote="cm" revision="cm-10.2" />
+  <project path="external/jsr305" name="CyanogenMod/android_external_jsr305" remote="cm" revision="cm-10.2"  />
+  <project path="external/junit" name="CyanogenMod/android_external_junit"  remote="cm" revision="cm-10.2" />
+  <project path="external/kernel-headers" name="CyanogenMod/android_external_kernel-headers"  remote="cm" revision="cm-10.2" />
+  <project path="external/kissfft" name="CyanogenMod/android_external_kissfft"  remote="cm" revision="cm-10.2" />
+  <project path="external/koush/ion" name="CyanogenMod/ion"  remote="cm" revision="cm-10.2" />
+  <project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync"  remote="cm" revision="cm-10.2" />
+  <project path="external/koush/Superuser" name="CyanogenMod/Superuser"  remote="cm" revision="cm-10.2" />
+  <project path="external/koush/Widgets" name="CyanogenMod/Widgets"  remote="cm" revision="cm-10.2" />
+  <project path="external/libcap-ng" name="CyanogenMod/android_external_libcap-ng"  remote="cm" revision="cm-10.2" />
+  <project path="external/libffi" name="CyanogenMod/android_external_libffi" remote="cm" revision="cm-10.2"  />
+  <project path="external/libgsm" name="CyanogenMod/android_external_libgsm" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/liblzf" name="CyanogenMod/android_external_liblzf" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libmtp" name="CyanogenMod/android_external_libmtp"  remote="cm" revision="cm-10.2" />
+  <project path="external/libncurses" name="CyanogenMod/android_external_libncurses"  remote="cm" revision="cm-10.2" /> remote="cm" revision="cm-10.2" 
+  <project path="external/libnfc-nci" name="CyanogenMod/android_external_libnfc-nci" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/libnfc-nxp" name="CyanogenMod/android_external_libnfc-nxp" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libnl-headers" name="CyanogenMod/android_external_libnl-headers" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/libogg" name="CyanogenMod/android_external_libogg" remote="cm" revision="cm-10.2"  />
+  <project path="external/libpcap" name="CyanogenMod/android_external_libpcap" remote="cm" revision="cm-10.2"  />
+  <project path="external/libphonenumber" name="CyanogenMod/android_external_libphonenumber" remote="cm" revision="cm-10.2"  /> remote="cm" revision="cm-10.2" 
+  <project path="external/libphonenumbergoogle" name="CyanogenMod/android_external_libphonenumbergoogle" />
+  <project path="external/libpng" name="CyanogenMod/android_external_libpng" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libppp" name="CyanogenMod/android_external_libppp"  remote="cm" revision="cm-10.2" />
+  <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libsepol" name="CyanogenMod/android_external_libsepol" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libusb" name="CyanogenMod/android_external_libusb"  remote="cm" revision="cm-10.2" />
+  <project path="external/libusbx" name="CyanogenMod/android_external_libusbx" />
+  <project path="external/libusb-compat" name="CyanogenMod/android_external_libusb-compat"  remote="cm" revision="cm-10.2" />
+  <project path="external/libvorbis" name="CyanogenMod/android_external_libvorbis"  remote="cm" revision="cm-10.2" />
+  <project path="external/libvpx" name="CyanogenMod/android_external_libvpx" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/libxml2" name="CyanogenMod/android_external_libxml2"  remote="cm" revision="cm-10.2" />
+  <project path="external/libxslt" name="CyanogenMod/android_external_libxslt" remote="cm" revision="cm-10.2"  />
+  <project path="external/libyuv" name="CyanogenMod/android_external_libyuv" groups="libyuv"  remote="cm" revision="cm-10.2" />
+  <project path="external/linux-tools-perf" name="CyanogenMod/android_external_linux-tools-perf" remote="cm" revision="cm-10.2"  />
+  <project path="external/littlemock" name="CyanogenMod/android_external_littlemock"  remote="cm" revision="cm-10.2" />
+  <project path="external/llvm" name="CyanogenMod/android_external_llvm" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/lsof" name="CyanogenMod/android_external_lsof"  remote="cm" revision="cm-10.2" />
+  <project path="external/lzo" name="CyanogenMod/android_external_lzo"  remote="cm" revision="cm-10.2" />
+  <project path="external/marisa-trie" name="platform/external/marisa-trie" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/markdown" name="CyanogenMod/android_external_markdown" remote="cm" revision="cm-10.2"  />
+  <project path="external/mdnsresponder" name="CyanogenMod/android_external_mdnsresponder" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/mksh" name="CyanogenMod/android_external_mksh" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/mockito" name="platform/external/mockito" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/mockwebserver" name="CyanogenMod/android_external_mockwebserver" remote="cm" revision="cm-10.2"  />
+  <project path="external/mp4parser" name="CyanogenMod/android_external_mp4parser"  remote="cm" revision="cm-10.2" />
+  <project path="external/mtpd" name="CyanogenMod/android_external_mtpd"  remote="cm" revision="cm-10.2" />
+  <project path="external/nano" name="CyanogenMod/android_external_nano"  remote="cm" revision="cm-10.2" />
+  <project path="external/naver-fonts" name="CyanogenMod/android_external_naver-fonts"  remote="cm" revision="cm-10.2" />
+  <project path="external/netcat" name="CyanogenMod/android_external_netcat" remote="cm" revision="cm-10.2"  />
+  <project path="external/netperf" name="CyanogenMod/android_external_netperf" remote="cm" revision="cm-10.2"  />
+  <project path="external/neven" name="CyanogenMod/android_external_neven"  remote="cm" revision="cm-10.2" />
+  <project path="external/nist-pkits" name="platform/external/nist-pkits" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/nist-sip" name="CyanogenMod/android_external_nist-sip" remote="cm" revision="cm-10.2"  />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="cm" revision="cm-10.2"  />
+  <project path="external/oauth" name="CyanogenMod/android_external_oauth" />
+  <project path="external/objenesis" name="platform/external/objenesis" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/okhttp" name="CyanogenMod/android_external_okhttp" remote="cm" revision="cm-10.2"  />
+  <project path="external/open-vcdiff" name="platform/external/open-vcdiff" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/opencv" name="CyanogenMod/android_external_opencv" remote="cm" revision="cm-10.2"  />
+  <project path="external/openfst" name="CyanogenMod/android_external_openfst" remote="cm" revision="cm-10.2"  />
+  <project path="external/openssh" name="CyanogenMod/android_external_openssh" remote="cm" revision="cm-10.2"  />
+  <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="cm" revision="cm-10.2"  groups="pdk" />
+  <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" remote="cm" revision="cm-10.2"  />
+  <project path="external/oprofile" name="CyanogenMod/android_external_oprofile" remote="cm" revision="cm-10.2"  />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz"  remote="cm" revision="cm-10.2" />
+  <project path="external/ping" name="CyanogenMod/android_external_ping"  remote="cm" revision="cm-10.2" />
+  <project path="external/ping6" name="CyanogenMod/android_external_ping6"  remote="cm" revision="cm-10.2" />
+  <project path="external/powertop" name="CyanogenMod/android_external_powertop" remote="cm" revision="cm-10.2"  />
+  <project path="external/ppp" name="CyanogenMod/android_external_ppp"  remote="cm" revision="cm-10.2" />
+  <project path="external/proguard" name="CyanogenMod/android_external_proguard"  remote="cm" revision="cm-10.2" groups="pdk-java" />
+  <project path="external/protobuf" name="CyanogenMod/android_external_protobuf"  remote="cm" revision="cm-10.2" groups="pdk" />
+  <project path="external/qemu" name="CyanogenMod/android_external_qemu"  remote="cm" revision="cm-10.2" />
+  <project path="external/qemu-pc-bios" name="CyanogenMod/android_external_qemu-pc-bios"  remote="cm" revision="cm-10.2" />
+  <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="cm" revision="cm-10.2"  />
+  <project path="external/quake" name="CyanogenMod/android_external_quake" remote="cm" revision="cm-10.2"  />
+  <project path="external/regex-re2" name="CyanogenMod/android_external_regex-re2"  remote="cm" revision="cm-10.2" />
+  <project path="external/replicaisland" name="CyanogenMod/android_external_replicaisland" remote="cm" revision="cm-10.2"  />
+  <project path="external/robolectric" name="platform/external/robolectric" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/rsync" name="CyanogenMod/android_external_rsync" remote="cm" revision="cm-10.2"  />
+  <project path="external/safe-iop" name="CyanogenMod/android_external_safe-iop" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/skia" name="CyanogenMod/android_external_skia"  remote="cm" revision="cm-10.2" />
+  <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/smali" name="CyanogenMod/android_external_smali" remote="cm" revision="cm-10.2"  />
+  <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/speex" name="CyanogenMod/android_external_speex" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/spongycastle" name="CyanogenMod/android_external_spongycastle" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/sqlite" name="CyanogenMod/android_external_sqlite" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/srec" name="CyanogenMod/android_external_srec" remote="cm" revision="cm-10.2"  />
+  <project path="external/srtp" name="CyanogenMod/android_external_srtp" remote="cm" revision="cm-10.2"  />
+  <project path="external/stlport" name="CyanogenMod/android_external_stlport" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/strace" name="CyanogenMod/android_external_strace" remote="cm" revision="cm-10.2"  />
+  <project path="external/stressapptest" name="CyanogenMod/android_external_stressapptest" />
+  <project path="external/svox" name="CyanogenMod/android_external_svox" remote="cm" revision="cm-10.2"  />
+  <project path="external/tagsoup" name="CyanogenMod/android_external_tagsoup" remote="cm" revision="cm-10.2"  />
+  <project path="external/tcpdump" name="CyanogenMod/android_external_tcpdump"  remote="cm" revision="cm-10.2" />
+  <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/tinyalsa" name="CyanogenMod/android_external_tinyalsa" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/tinyxml" name="CyanogenMod/android_external_tinyxml" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/tinyxml2" name="CyanogenMod/android_external_tinyxml2" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/tremolo" name="CyanogenMod/android_external_tremolo" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/v8" name="CyanogenMod/android_external_v8"  remote="cm" revision="cm-10.2" />
+  <project path="external/valgrind" name="CyanogenMod/android_external_valgrind" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/vim" name="CyanogenMod/android_external_vim"  remote="cm" revision="cm-10.2" />
+  <project path="external/webkit" name="CyanogenMod/android_external_webkit"  remote="cm" revision="cm-10.2" />
+  <project path="external/webp" name="CyanogenMod/android_external_webp"  remote="cm" revision="cm-10.2" />
+  <project path="external/webrtc" name="CyanogenMod/android_external_webrtc" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti"  remote="cm" revision="cm-10.2" />
+  <project path="external/xmlwriter" name="CyanogenMod/android_external_xmlwriter"  remote="cm" revision="cm-10.2" />
+  <project path="external/xmp_toolkit" name="CyanogenMod/android_external_xmp_toolkit"  remote="cm" revision="cm-10.2" />
+  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk"  remote="cm" revision="cm-10.2" />
+  <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="cm" revision="cm-10.2"  />
+  <project path="external/zxing" name="CyanogenMod/android_external_zxing" remote="cm" revision="cm-10.2"  />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="cm" revision="cm-10.2" groups="pdk" />
   <project path="frameworks/base" name="ParanoidAndroid/android_frameworks_base" remote="github" revision="jb43-legacy" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
@@ -248,22 +268,36 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" />
   <project path="frameworks/webview" name="platform/frameworks/webview" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
-  <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
-  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
-  <project path="libcore" name="CyanogenMod/android_libcore" remote="cm" revision="cm-10.2" />
-  <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
-  <project path="ndk" name="platform/ndk" />
+  <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" remote="cm" revision="cm-10.2" />
+  <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk"remote="cm" revision="cm-10.2" />
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk"remote="cm" revision="cm-10.2" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" groups="qcom" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" groups="qcom_msm8960"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors"remote="cm" revision="cm-10.2" />
+  <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan"remote="cm" revision="cm-10.2" />
+  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" groups="pdk"  remote="cm" revision="cm-10.2"/>
+  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" remote="cm" revision="cm-10.2"/>
+  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan"remote="cm" revision="cm-10.2" />
+  <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan"remote="cm" revision="cm-10.2" />
+  <project path="libcore" name="CyanogenMod/android_libcore" remote="cm" revision="cm-10.2"/>
+  <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" remote="cm" revision="cm-10.2"/>
+  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" remote="cm" revision="cm-10.2" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" remote="cm" revision="cm-10.2" />
@@ -370,6 +404,7 @@
   <project path="system/core" name="ParanoidAndroid/android_system_core" remote="github" revision="jb43-legacy"  />
   <project path="system/extras" name="ParanoidAndroid/android_system_extras" remote="github" revision="jb43"/>
   <project path="system/media" name="platform/system/media" groups="pdk" />
+  <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="cm" revision="cm-10.2" groups="qcom" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" remote="cm" revision="cm-10.2" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="cm" revision="cm-10.2" groups="pdk" />
