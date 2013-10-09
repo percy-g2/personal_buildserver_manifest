@@ -241,33 +241,33 @@
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" remote="cm" revision="cm-10.2"  />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="cm" revision="cm-10.2" groups="pdk" />
   <project path="frameworks/base" name="ParanoidAndroid/android_frameworks_base" remote="github" revision="jb43-legacy" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
-  <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/mff" name="platform/frameworks/mff" />
-  <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
-  <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
-  <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
-  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" />
-  <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
-  <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
-  <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
-  <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" />
-  <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" remote="cm" revision="cm-10.2" />
-  <project path="frameworks/testing" name="platform/frameworks/testing" />
-  <project path="frameworks/volley" name="platform/frameworks/volley" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" />
-  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
+  <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
+  <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
+  <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
+  <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
+  <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
+  <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
+  <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
+  <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
+  <project path="frameworks/opt/datetimepicker" name="CyanogenMod/android_frameworks_opt_datetimepicker" />
+  <project path="frameworks/opt/emoji" name="CyanogenMod/android_frameworks_opt_emoji" />
+  <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" />
+  <project path="frameworks/opt/inputmethodcommon" name="CyanogenMod/android_frameworks_opt_inputmethodcommon" />
+  <project path="frameworks/opt/mailcommon" name="CyanogenMod/android_frameworks_opt_mailcommon" />
+  <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms" />
+  <project path="frameworks/opt/net/voip" name="CyanogenMod/android_frameworks_opt_net_voip" />
+  <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" />
+  <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" />
+  <project path="frameworks/opt/telephony" name="ParanoidAndroid/android_frameworks_opt_telephony" remote="github" revision="jb43-legacy" />
+  <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
+  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
+  <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" />
+  <project path="frameworks/testing" name="CyanogenMod/android_frameworks_testing" />
+  <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" />
+  <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" />
+  <project path="frameworks/wilhelm" name="CyanogenMod/android_frameworks_wilhelm" />
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" remote="cm" revision="cm-10.2" />
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk"remote="cm" revision="cm-10.2" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" remote="cm" revision="cm-10.2"/>
@@ -352,7 +352,7 @@
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" remote="cm" revision="cm-10.2" />
+  <project path="packages/providers/TelephonyProvider" name="ParanoidAndroid/android_packages_providers_TelephonyProvider" remote="github" revision="jb43-legacy" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
@@ -400,24 +400,22 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" remote="cm" revision="cm-10.2" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
+  <project path="system/bluetooth" name="CyanogenMod/system/bluetooth" groups="pdk" remote="cm" revision="cm-10.2"/>
   <project path="system/core" name="ParanoidAndroid/android_system_core" remote="github" revision="jb43-legacy"  />
-  <project path="system/extras" name="ParanoidAndroid/android_system_extras" remote="github" revision="jb43"/>
-  <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/qcom" name="CyanogenMod/android_system_qcom" remote="cm" revision="cm-10.2" groups="qcom" />
-  <project path="system/netd" name="CyanogenMod/android_system_netd" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="cm" revision="cm-10.2" groups="pdk" />
-  <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
-  <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
-  <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
-  <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" revision="refs/tags/android-4.3_r1" />
-  <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" />
-  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="notdefault,tools" />
-  <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
-  <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
-  <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="cm" revision="cm-10.2"/>
+  <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" remote="cm" revision="cm-10.2"/>
+  <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk"remote="cm" revision="cm-10.2" />
+  <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk"remote="cm" revision="cm-10.2" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="cm" revision="cm-10.2"/>
+  <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />  
+  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="vendor/pa" name="percy-g2/android_vendor_pa" remote="github" revision="jb43-legacy" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="ParanoidAndroid/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="jb43" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="ParanoidAndroid/android_vendor_tmobile_libs_com.tmobile.themes" remote="github" revision="jb43" />
