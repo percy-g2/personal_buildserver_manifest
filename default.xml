@@ -400,7 +400,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" remote="cm" revision="cm-10.2" />
-  <project path="system/bluetooth" name="CyanogenMod/system/bluetooth" groups="pdk" remote="cm" revision="cm-10.2"/>
+  <project path="system/bluetooth" name="CyanogenMod/system/bluetooth" groups="pdk" remote="cm" revision="cm-10.2" />
   <project path="system/core" name="ParanoidAndroid/android_system_core" remote="github" revision="jb43-legacy"  />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="cm" revision="cm-10.2"/>
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" remote="cm" revision="cm-10.2"/>
