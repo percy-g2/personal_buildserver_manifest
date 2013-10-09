@@ -84,7 +84,7 @@
   <project path="external/eclipse-basebuilder" name="CyanogenMod/android_external_eclipse-basebuilder"  remote="cm" revision="cm-10.2" />
   <project path="external/eclipse-windowbuilder" name="CyanogenMod/android_external_eclipse-windowbuilder" remote="cm" revision="cm-10.2"  />
   <project path="external/elfutils" name="CyanogenMod/android_external_elfutils"  remote="cm" revision="cm-10.2" />
-  <project path="external/embunit" name="CyanogenMod/android_external_embunit" / remote="cm" revision="cm-10.2" >
+  <project path="external/embunit" name="CyanogenMod/android_external_embunit"  remote="cm" revision="cm-10.2" />
   <project path="external/emma" name="CyanogenMod/android_external_emma"  remote="cm" revision="cm-10.2" />
   <project path="external/esd" name="CyanogenMod/android_external_esd"  remote="cm" revision="cm-10.2" />
   <project path="external/exfat" name="CyanogenMod/android_external_exfat"  remote="cm" revision="cm-10.2" />
