@@ -96,7 +96,7 @@
   <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos"  remote="cm" revision="cm-10.2" />
   <project path="external/fuse" name="CyanogenMod/android_external_fuse"  remote="cm" revision="cm-10.2" />
   <project path="external/ganymed-ssh2" name="CyanogenMod/android_external_ganymed-ssh2"  remote="cm" revision="cm-10.2" />
-  <project path="external/gcc-demangle" name="CyanogenMod/android_external_gcc-demangle" groups="pdk" / remote="cm" revision="cm-10.2" >
+  <project path="external/gcc-demangle" name="CyanogenMod/android_external_gcc-demangle" groups="pdk"  remote="cm" revision="cm-10.2" />
   <project path="external/genext2fs" name="CyanogenMod/android_external_genext2fs" remote="cm" revision="cm-10.2"  />
   <project path="external/giflib" name="CyanogenMod/android_external_giflib"  remote="cm" revision="cm-10.2" />
   <project path="external/google" name="CyanogenMod/android_external_google"  remote="cm" revision="cm-10.2" />
