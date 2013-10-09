@@ -27,13 +27,10 @@
   <project path="build" name="percy-g2/android_build-1" remote="github" revision="jb43-legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-
-  <project path="manifest" name="ParanoidAndroid/manifest" remote="github" revision="jb43-legacy" />
   
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" remote="cm" revision="cm-10.2" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
+  <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" remote="cm" revision="cm-10.2" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="cm-10.2" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" remote="cm" revision="cm-10.2" />
