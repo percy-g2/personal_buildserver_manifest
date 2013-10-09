@@ -150,7 +150,7 @@
   <project path="external/libselinux" name="CyanogenMod/android_external_libselinux" groups="pdk"  remote="cm" revision="cm-10.2" />
   <project path="external/libsepol" name="CyanogenMod/android_external_libsepol" groups="pdk"  remote="cm" revision="cm-10.2" />
   <project path="external/libusb" name="CyanogenMod/android_external_libusb"  remote="cm" revision="cm-10.2" />
-  <project path="external/libusbx" name="CyanogenMod/android_external_libusbx" />
+  <project path="external/libusbx" name="CyanogenMod/android_external_libusbx" remote="cm" revision="cm-10.2" />
   <project path="external/libusb-compat" name="CyanogenMod/android_external_libusb-compat"  remote="cm" revision="cm-10.2" />
   <project path="external/libvorbis" name="CyanogenMod/android_external_libvorbis"  remote="cm" revision="cm-10.2" />
   <project path="external/libvpx" name="CyanogenMod/android_external_libvpx" groups="pdk"  remote="cm" revision="cm-10.2" group="pdk"/>
