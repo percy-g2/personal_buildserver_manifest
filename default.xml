@@ -278,7 +278,7 @@
   
   <project path="vendor/samsung" name="broadcomCM/android_vendor_samsung" remote="github" revision="gingerbread" />
   <project path="vendor/alcatel" name="broadcomCM/android_vendor_alcatel" remote="github" revision="gingerbread" />
-  <project path="device/samsung" name="broadcomCM/android_device_samsung_bcm21553-common" remote="github" revision="cm-7.2.0" />
+  <project path="device/samsung/bcm21553-common" name="broadcomCM/android_device_samsung_bcm21553-common" remote="github" revision="cm-7.2.0" />
 
   <project path="android" name="CyanMobile/android_cyanmobile"  />
 
