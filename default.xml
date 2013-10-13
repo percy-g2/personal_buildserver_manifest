@@ -45,7 +45,7 @@
   <project path="device/samsung/galaxysbmtd" name="CyanMobile/android_device_samsung_galaxysbmtd_cyanmobile" />
   <project path="device/samsung/gio" name="CyanMobile/android_device_samsung_gio_cyanmobile" />
   <project path="device/samsung/tass" name="CyanMobile/android_device_samsung_tass_cyanmobile" />
-  <project path="device/samsung/totoro" name="percy-g2/android_device_samsung_totoro" />
+  <project path="device/samsung/totoro" name="broadcomCM/android_device_samsung_totoro" remote="github" revision="cmx" />
   <project path="device/semc/mogami-common" name="CyanogenMod/android_device_semc_mogami-common" />
   <project path="device/semc/msm7x27-common" name="CyanogenMod/android_device_semc_msm7x27-common" />
   <project path="device/semc/msm7x30-common" name="CyanogenMod/android_device_semc_msm7x30-common" />
@@ -275,7 +275,11 @@
   <project path="vendor/tmobile/themes/Androidian" name="CyanMobile/android_vendor_tmobile_themes_Androidian_cyanmobile" />
   <project path="vendor/tmobile/themes/Cyanbread" name="CyanMobile/android_vendor_tmobile_themes_Cyanbread_cyanmobile" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
+  
+  <project path="vendor/samsung" name="broadcomCM/android_vendor_samsung" remote="github" revision="gingerbread" />
+  <project path="vendor/alcatel" name="broadcomCM/android_vendor_alcatel" remote="github" revision="gingerbread" />
+  <project path="device/samsung" name="broadcomCM/android_device_samsung_bcm21553-common" remote="github" revision="cm-7.2.0" />
 
-  <project path="android" name="CyanMobile/android_cyanmobile" />
+  <project path="android" name="CyanMobile/android_cyanmobile"  />
 
 </manifest>
