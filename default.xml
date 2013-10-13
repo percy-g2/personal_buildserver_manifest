@@ -17,7 +17,7 @@
   <project path="bionic" name="CyanMobile/android_bionic_cyanmobile" />
   <project path="bootable/bootloader/legacy" name="CyanogenMod/android_bootable_bootloader_legacy" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
-  <project path="bootable/recovery" name="CyanMobile/android_bootable_recovery_cyanmobile" />
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="dalvik" name="CyanMobile/android_dalvik_cyanmobile" />
   <project path="development" name="CyanMobile/android_development_cyanmobile" />
   <project path="device/common" name="CyanogenMod/android_device_common" />
