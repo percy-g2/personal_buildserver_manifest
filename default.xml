@@ -3,7 +3,7 @@
 
   <!-- Main remote for the PAC project -->
   <remote  name="pac"
-           fetch="https://github.com/PAC-man"
+           fetch="."
            review="review.pac-rom.com" />
 
   <!-- Main remote for Android -->
@@ -20,6 +20,10 @@
            fetch="https://github.com/CyanogenMod"
            review="review.cyanogenmod.org" />
 
+  <remote  name="omni"
+           fetch="https://github.com/omnirom"
+           review="gerrit.omnirom.org" />
+
   <remote  name="aokp"
            fetch="https://github.com/AOKP"
            review="gerrit.aokp.co" />
@@ -33,8 +37,8 @@
            sync-c="true"
            sync-j="4" />
 
- <!-- CM -->
-  <project path="build" name="android_build" remote="cm" groups="pdk" >
+  <!-- CM -->
+  <project path="build" name="android_build" remote="pac" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="android_abi_cpp" remote="cm" groups="pdk" />
@@ -42,10 +46,10 @@
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" />
   <project path="dalvik" name="android_dalvik" remote="cm" />
-  <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="development" name="android_development" remote="cm" />
   <project path="device/common" name="android_device_common" remote="cm" />
   <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" remote="cm" groups="pdk" />
@@ -53,9 +57,9 @@
   <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="cm" groups="pdk" />
   <project path="device/generic/mips" name="android_device_generic_mips" remote="cm" groups="pdk" />
   <project path="device/generic/x86" name="android_device_generic_x86" remote="cm" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="device/google/accessory/arduino" name="android_device_google_accessory_arduino" remote="cm" groups="device" />
   <project path="device/google/accessory/demokit" name="android_device_google_accessory_demokit" remote="cm" groups="device" />
   <project path="device/sample" name="android_device_sample" remote="cm" groups="device" />
@@ -77,7 +81,7 @@
   <project path="external/bsdiff" name="android_external_bsdiff" remote="cm" groups="pdk" />
   <project path="external/busybox" name="android_external_busybox" remote="cm" />
   <project path="external/bzip2" name="android_external_bzip2" remote="cm" groups="pdk" />
-  <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/checkpolicy" name="android_external_checkpolicy" remote="cm" groups="pdk" />
   <project path="external/chromium" name="android_external_chromium" remote="cm" />
   <project path="external/chromium-trace" name="android_external_chromium-trace" remote="cm" groups="pdk" />
@@ -117,7 +121,7 @@
   <project path="external/guava" name="android_external_guava" remote="cm" />
   <project path="external/hamcrest" name="android_external_hamcrest" remote="cm" />
   <project path="external/harfbuzz" name="android_external_harfbuzz" remote="cm" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/htop" name="android_external_htop" remote="cm" />
   <project path="external/hyphenation" name="android_external_hyphenation" remote="cm" />
   <project path="external/icu4c" name="android_external_icu4c" remote="cm" groups="pdk" />
@@ -169,11 +173,11 @@
   <project path="external/llvm" name="android_external_llvm" remote="cm" groups="pdk"/>
   <project path="external/lsof" name="android_external_lsof" remote="cm" />
   <project path="external/lzo" name="android_external_lzo" remote="cm" />
-  <project path="external/marisa-trie" name="platform/external/marisa-trie" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/marisa-trie" name="platform/external/marisa-trie" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/markdown" name="android_external_markdown" remote="cm" />
   <project path="external/mdnsresponder" name="android_external_mdnsresponder" remote="cm" groups="pdk" />
   <project path="external/mksh" name="android_external_mksh" remote="cm" groups="pdk" />
-  <project path="external/mockito" name="platform/external/mockito" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/mockito" name="platform/external/mockito" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/mockwebserver" name="android_external_mockwebserver" remote="cm" />
   <project path="external/mp4parser" name="android_external_mp4parser" remote="cm" />
   <project path="external/mtpd" name="android_external_mtpd" remote="cm" />
@@ -182,14 +186,14 @@
   <project path="external/netcat" name="android_external_netcat" remote="cm" />
   <project path="external/netperf" name="android_external_netperf" remote="cm" />
   <project path="external/neven" name="android_external_neven" remote="cm" />
-  <project path="external/nist-pkits" name="platform/external/nist-pkits" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/nist-pkits" name="platform/external/nist-pkits" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/nist-sip" name="android_external_nist-sip" remote="cm" />
-  <project path="external/noto-fonts" name="platform/external/noto-fonts" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="cm" />
   <project path="external/oauth" name="android_external_oauth" remote="cm" />
-  <project path="external/objenesis" name="platform/external/objenesis" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/objenesis" name="platform/external/objenesis" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/okhttp" name="android_external_okhttp" remote="cm" />
-  <project path="external/open-vcdiff" name="platform/external/open-vcdiff" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/open-vcdiff" name="platform/external/open-vcdiff" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/opencv" name="android_external_opencv" remote="cm" />
   <project path="external/openfst" name="android_external_openfst" remote="cm" />
   <project path="external/openssh" name="android_external_openssh" remote="cm" />
@@ -209,12 +213,12 @@
   <project path="external/quake" name="android_external_quake" remote="cm" />
   <project path="external/regex-re2" name="android_external_regex-re2" remote="cm" />
   <project path="external/replicaisland" name="android_external_replicaisland" remote="cm" />
-  <project path="external/robolectric" name="platform/external/robolectric" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/robolectric" name="platform/external/robolectric" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/rsync" name="android_external_rsync" remote="cm" />
   <project path="external/safe-iop" name="android_external_safe-iop" remote="cm" groups="pdk" />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="cm" groups="pdk" />
   <project path="external/skia" name="android_external_skia" remote="cm" />
-  <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/smack" name="platform/external/smack" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/smali" name="android_external_smali" remote="cm"/>
   <project path="external/sonivox" name="android_external_sonivox" remote="cm" groups="pdk" />
   <project path="external/speex" name="android_external_speex" remote="cm" groups="pdk" />
@@ -227,7 +231,7 @@
   <project path="external/svox" name="android_external_svox" remote="cm" />
   <project path="external/tagsoup" name="android_external_tagsoup" remote="cm" />
   <project path="external/tcpdump" name="android_external_tcpdump" remote="cm" />
-  <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
+  <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="cm" groups="pdk" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="cm" groups="pdk" />
   <project path="external/tinyxml2" name="android_external_tinyxml2" remote="cm" groups="pdk" />
@@ -281,14 +285,17 @@
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" groups="pdk" />
   <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" groups="qcom" />
+  <project path="hardware/qcom/audio-bfam" name="android_hardware_qcom_audio-bfam" remote="cm" groups="qcom" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" groups="qcom" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="cm" groups="qcom" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" groups="qcom" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" groups="qcom" />
+  <project path="hardware/qcom/display-mdss" name="android_hardware_qcom_display-mdss" remote="cm" groups="qcom" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="cm" groups="qcom" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" groups="qcom" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" groups="qcom" />
+  <project path="hardware/qcom/media-v4l2" name="android_hardware_qcom_media-v4l2" remote="cm" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="android_hardware_qcom_msm8960" remote="cm" groups="qcom_msm8960" />
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" />
   <project path="hardware/qcom/sensors" name="android_hardware_qcom_sensors" remote="cm" />
@@ -347,7 +354,6 @@
   <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" remote="cm" />
   <project path="packages/screensavers/WebView" name="android_packages_screensavers_WebView" remote="cm" />
   <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" remote="cm" />
-  <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="cm" />
   <project path="prebuilt" name="android_prebuilt" remote="cm" />
   <project path="system/bluetooth" name="android_system_bluetooth" remote="cm" groups="pdk" />
   <project path="system/extras" name="android_system_extras" remote="cm" groups="pdk" />
@@ -360,42 +366,42 @@
   <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="cm" />
 
   <!-- AOSP -->
-  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="cts" />
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="pdk" name="platform/pdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
-  <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="darwin" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="darwin" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="linux" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="linux" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/devtools" name="platform/prebuilts/devtools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" groups="darwin,mips" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" groups="pdk,darwin,mips" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" groups="linux,mips" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" groups="pdk,linux,mips" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" groups="linux,x86" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" groups="pdk,tools" />
+  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="cts" />
+  <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="ndk" name="platform/ndk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="pdk" name="platform/pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="linux" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="linux" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/devtools" name="platform/prebuilts/devtools" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" groups="pdk,darwin,arm" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" groups="pdk,darwin,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" groups="darwin,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" groups="pdk,darwin,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" groups="pdk,darwin,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" groups="linux,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" groups="pdk,linux,mips" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" groups="linux,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" groups="pdk,linux,x86" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.3.1_r1" groups="pdk,tools" />
   <project path="sdk" name="android_sdk" remote="cm" />
 
   <!-- AOKP -->
@@ -407,6 +413,9 @@
   <project path="external/doclava" name="android_external_doclava" remote="pa" revision="jb43" />
   <project path="vendor/pa" name="android_vendor_pa" remote="pa" revision="jb43" />
   <project path="packages/apps/HALO" name="HALO" remote="pac" />
+
+  <!-- Omni -->
+  <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="omni" revision="android-4.3" />
 
   <!-- PAC -->
   <project path="android" name="android" remote="pac" />
@@ -435,6 +444,7 @@
   <!-- Device extras: legacy support -->
   <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" revision="cm-10.2" />
   <project path="hardware/qcom/media-legacy" name="androidarmv6/android_hardware_qcom_media_legacy" revision="cm-10.2" />
+
 
   <!-- Sony Novathor devices -->
 
