@@ -423,7 +423,7 @@
   <!-- PAC -->
   <project path="android" name="android" remote="pac" />
   <project path="frameworks/base" name="android_frameworks_base" remote="pac" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="pac" groups="pdk" />
+  <project path="frameworks/native" name="percy-g2/android_frameworks_native-1" remote="github" groups="pdk" revision="cm-10.2" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="pac" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="pac" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="pac" />
