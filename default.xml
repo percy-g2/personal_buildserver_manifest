@@ -422,24 +422,24 @@
 
   <!-- PAC -->
   <project path="android" name="android" remote="pac" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="pac" />
-  <project path="frameworks/native" name="percy-g2/android_frameworks_native-1" remote="github" groups="pdk" revision="cm-10.2" />
+  <project path="frameworks/base" name="Nick0703/android_frameworks_base" remote="github" revision="test" />
+  <project path="frameworks/native" name="Nick0703/android_frameworks_native" remote="github" revision="test" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="pac" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="pac" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="pac" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="pac" />
+  <project path="packages/apps/Dialer" name="Nick0703/android_packages_apps_Dialer" remote="github" revision="test" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="pac" />
   <project path="packages/apps/GooglePacman" name="android_packages_apps_GooglePacman" remote="pac" />
-  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="pac" />
+  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="github" revision="test" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="pac" />
   <project path="packages/apps/PacPapers" name="android_packages_apps_PacPapers" remote="pac" />
   <project path="packages/apps/PacStats" name="android_packages_apps_PacStats" remote="pac" />
-  <project path="packages/apps/Phone" name="android_packages_apps_Phone" remote="pac" />
+  <project path="packages/apps/Phone" name="Nick0703/android_packages_apps_Phone" remote="github" revision="test" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pac" />
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="pac" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pac" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="pac" />
-  <project path="system/core" name="android_system_core" remote="pac" />
+  <project path="system/core" name="Nick0703/android_system_core" remote="github" revision="test" />
   <project path="vendor/pac" name="android_vendor_pac" remote="pac" >
     <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
   </project>
