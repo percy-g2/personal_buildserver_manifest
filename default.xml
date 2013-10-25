@@ -422,7 +422,7 @@
 
   <!-- PAC -->
   <project path="android" name="android" remote="pac" />
-  <project path="frameworks/base" name="Nick0703/android_frameworks_base" remote="github" revision="test" />
+  <project path="frameworks/base" name="XperiaPAC/android_frameworks_base" remote="github" revision="test" />
   <project path="frameworks/native" name="Nick0703/android_frameworks_native" remote="github" revision="test" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="pac" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="pac" />
