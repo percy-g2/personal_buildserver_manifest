@@ -33,7 +33,7 @@
            review="gerrit.androidninjas.com:8181" />
 
   <default revision="refs/heads/cm-10.2"
-           
+           remote="github"
            sync-c="true"
            sync-j="16" />
 
