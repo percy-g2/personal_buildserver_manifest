@@ -35,7 +35,7 @@
   <default revision="refs/heads/cm-10.2"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="16" />
 
   <!-- CM -->
   <project path="build" name="android_build" remote="pac" groups="pdk" >
@@ -103,6 +103,7 @@
   <project path="external/exfat" name="android_external_exfat" remote="cm" />
   <project path="external/expat" name="android_external_expat" remote="cm" groups="pdk" />
   <project path="external/eyes-free" name="android_external_eyes-free" remote="cm" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="cm" />
   <project path="external/fdlibm" name="android_external_fdlibm" remote="cm" />
   <project path="external/flac" name="android_external_flac" remote="cm" groups="pdk" />
   <project path="external/Focal" name="xplodwild/android_external_Focal" remote="github" />
@@ -200,6 +201,7 @@
   <project path="external/openssl" name="android_external_openssl" remote="cm" groups="pdk" />
   <project path="external/openvpn" name="android_external_openvpn" remote="cm" />
   <project path="external/oprofile" name="android_external_oprofile" remote="cm" />
+  <project path="external/pciutils" name="android_external_pciutils" remote="cm" />
   <project path="external/ping" name="android_external_ping" remote="cm" />
   <project path="external/pigz" name="android_external_pigz" remote="cm" />
   <project path="external/ping6" name="android_external_ping6" remote="cm" />
@@ -269,6 +271,7 @@
   <project path="frameworks/opt/photoviewer" name="android_frameworks_opt_photoviewer" remote="cm" />
   <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" remote="cm" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="cm" />
+  <project path="frameworks/opt/telephony-msim" name="android_frameworks_opt_telephony-msim" groups="pdk" remote="cm" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" remote="cm" />
   <project path="frameworks/rs" name="android_frameworks_rs" remote="cm" groups="pdk" />
   <project path="frameworks/support" name="android_frameworks_support" remote="cm" />
