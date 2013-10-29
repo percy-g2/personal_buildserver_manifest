@@ -3,7 +3,7 @@
 
   <!-- Main remote for the PAC project -->
   <remote  name="pac"
-           fetch="https://github.com/PAC-man"
+           fetch="."
            review="review.pac-rom.com" />
 
   <!-- Main remote for Android -->
@@ -31,7 +31,7 @@
   <default revision="refs/heads/cm-10.2"
            remote="github"
            sync-c="true"
-           sync-j="16" />
+           sync-j="4" />
 
   <!-- CM -->
   <project path="build" name="android_build" remote="pac" groups="pdk" >
@@ -318,7 +318,6 @@
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="cm" />
   <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="cm" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="cm" />
-  <project path="packages/apps/Focal" name="xplodwild/android_packages_apps_Focal" remote="github" revision="master" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="cm" />
   <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" remote="cm" />
   <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" remote="cm" />
@@ -440,6 +439,7 @@
   <!-- Device extras: legacy support -->
   <project path="hardware/qcom/display-legacy" name="androidarmv6/android_hardware_qcom_display-legacy" revision="cm-10.2" />
   <project path="hardware/qcom/media-legacy" name="androidarmv6/android_hardware_qcom_media_legacy" revision="cm-10.2" />
+
 
   <!-- Sony Novathor devices -->
 
