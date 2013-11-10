@@ -356,7 +356,7 @@
   <project path="system/bluetooth" name="android_system_bluetooth" remote="cm" groups="pdk" />
   <project path="system/extras" name="android_system_extras" remote="cm" groups="pdk" />
   <project path="system/media" name="android_system_media" remote="cm" groups="pdk" />
-  <project path="system/netd" name="Legacy-Xperia/android_system_netd" remote="github" revision="cm-10.2"remote="github" revision="cm-10.2" groups="pdk" />
+  <project path="system/netd" name="Legacy-Xperia/android_system_netd" remote="github" revision="cm-10.2" groups="pdk" />
   <project path="system/qcom" name="android_system_qcom" remote="cm" groups="pdk" />
   <project path="system/security" name="android_system_security" remote="cm" groups="pdk" />
   <project path="system/vold" name="android_system_vold" remote="cm" groups="pdk" />
