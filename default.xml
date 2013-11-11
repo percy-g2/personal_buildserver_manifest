@@ -16,8 +16,6 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
- 
-
 
   <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -26,8 +24,7 @@
   <project path="android" name="CyanogenMod/android" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="platform/art" remote="aosp" revision="refs/tags/android-4.4_r1" />
-  <!--<project path="bionic" name="Legacy-Xperia/android_bionic" groups="pdk" remote="github" revision="cm-11.0" /> /-->
+  <project path="art" name="CyanogenMod/android_art" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
@@ -271,15 +268,15 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
-  <project path="frameworks/av" name="Legacy-Xperia/android_frameworks_av" groups="pdk" remote="github" revision="cm-11.0" />
-  <project path="frameworks/base" name="Legacy-Xperia/android_frameworks_base" remote="github" revision="cm-11.0" />
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
-  <project path="frameworks/native" name="Legacy-Xperia/android_frameworks_native" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
@@ -306,8 +303,8 @@
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="Legacy-Xperia/android_hardware_libhardware" groups="pdk"  remote="github" revision="cm-11.0" />
-  <project path="hardware/libhardware_legacy" name="Legacy-Xperia/android_hardware_libhardware_legacy" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom" />
   <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" groups="caf" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom" />
@@ -352,7 +349,7 @@
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
-  <project path="packages/apps/Gallery2" name="Legacy-Xperia/android_packages_apps_Gallery2" remote="github" revision="cm-11.0"  />
+  <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
   <project path="packages/apps/InCallUI" name="CyanogenMod/android_packages_apps_InCallUI" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
@@ -445,11 +442,11 @@
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux" remote="aosp" revision="refs/tags/android-4.4_r1" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.4_r1" groups="pdk" />
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" remote="aosp" revision="refs/tags/android-4.4_r1" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4_r1" groups="pdk,tools" />
   <!-- apparently, requesting the tag is randomly returning bad results on this  one... fix whenever we update tags -->
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="b52073d9cb1b044f4701bfc32e60b927323740fb" groups="pdk" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.4_r1" groups="pdk,tools" />
   <project path="sdk" name="CyanogenMod/android_sdk" />
-  <project path="system/core" name="Legacy-Xperia/android_system_core" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
@@ -471,9 +468,10 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
 
+
   <project path="kernel/sony/u8500" name="percy-g2/android_kernel_xperia_u8500" remote="github" revision="kk-dev" />
   <project path="vendor/sony/nypon" name="percy-g2/vendor_nypon_4.3" remote="github" revision="master" />
-  <project path="device/sony/nypon" name="Legacy-Xperia/android_device_sony_nypon" remote="github" revision="master" />
+  <project path="device/sony/nypon" name="Legacy-Xperia/android_device_sony_nypon" remote="github" revision="kk-dev" />
   <project path="hardware/semc" name="percy-g2/aosp_4.3_hardware_semc" remote="github" revision="master" />
 </manifest>
 
