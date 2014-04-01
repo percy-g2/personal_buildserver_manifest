@@ -6,7 +6,7 @@
            review="android-review.googlesource.com" />
 
   <default revision="refs/tags/android-4.4.2_r2"
-           remote="github"
+           remote="aosp"
            sync-c="true"
            sync-j="4" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp"/>
