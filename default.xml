@@ -5,19 +5,9 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
-  <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <default revision="refs/tags/cm-10.1.3-RC2"
+  <default revision="refs/tags/android-4.4.2_r2"
            remote="github"
            sync-c="true"
            sync-j="4" />
-<project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" />
-  <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
-  
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp"/>
   </manifest>
