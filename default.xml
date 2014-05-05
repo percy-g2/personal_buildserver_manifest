@@ -23,7 +23,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <project path="bionic"  name="AndroidOpenSourceXperia/android_bionic" remote="github"     revision="master" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery"   name="AndroidOpenSourceXperia/android_bootable_recovery"  remote="github" revision="android-4.4" />
